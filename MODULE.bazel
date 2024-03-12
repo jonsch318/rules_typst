@@ -1,0 +1,6 @@
+"""jonsch318/rules_typst"""
+module(
+  name = "rules_typst",
+  version = "0.0.1"
+)
+
