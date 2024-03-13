@@ -1,0 +1,9 @@
+load("//typst:defs.bzl", "typst_pdf")
+
+package(default_visibility = ["//visibility:public"])
+
+typst_pdf(
+    name = "simple",
+    srcs = ["simple.typ"],
+    main = "simple.typ",
+)
