@@ -5,7 +5,7 @@ def _typst_pdf_impl(ctx):
     info = ctx.toolchains["@rules_typst//typst:toolchain_type"].typstinfo
 
     srcs = depset(
-        ctx.files.main + ctx.files.srcs + info.tool_files,
+        ctx.files.main + ctx.files.srcs
     )
 
     ctx.actions.run(
